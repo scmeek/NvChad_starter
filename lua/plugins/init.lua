@@ -1,38 +1,31 @@
-return {
-  {
-    "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
-    config = function()
-      require "configs.conform"
-    end,
-  },
+---@type NvPluginSpec[]
+local plugins = {
+  require "configs.overrides.cmpconfig",
+  require "configs.overrides.commentconfig",
+  require "configs.overrides.conformconfig",
+  require "configs.overrides.gitsigns",
+  require "configs.overrides.lspconfig",
+  require "configs.overrides.mason",
+  require "configs.overrides.nvimtree",
+  require "configs.overrides.treesitter",
 
-  -- These are some examples, uncomment them if you want to see them work!
-  -- {
-  --   "neovim/nvim-lspconfig",
-  --   config = function()
-  --     require("nvchad.configs.lspconfig").defaults()
-  --     require "configs.lspconfig"
-  --   end,
-  -- },
-  --
-  -- {
-  -- 	"williamboman/mason.nvim",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"lua-language-server", "stylua",
-  -- 			"html-lsp", "css-lsp" , "prettier"
-  -- 		},
-  -- 	},
-  -- },
-  --
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  require "configs.copilot",
+  require "configs.copilotcmp",
+  require "configs.crates",
+  require "configs.dressing",
+  require "configs.fugitive",
+  require "configs.glslview",
+  require "configs.lastplace",
+  require "configs.multicursors",
+  require "configs.noice",
+  require "configs.nullls",
+  require "configs.signature",
+  require "configs.spider",
+  require "configs.surround",
+  require "configs.targets",
+  require "configs.tmuxnavigator",
+  require "configs.todocomments",
+  require "configs.tsautotag",
 }
+
+return plugins
