@@ -21,9 +21,8 @@ local ui_statusline_cursor_position_add_percent = function(minimum_cursor_positi
 end
 
 M.ui = {
-  theme = "onedark",
-  -- theme = "tokyonight",
-  -- theme_toggle = { "tokyonight", "gruvbox_light" },
+  theme = "tokyonight",
+  theme_toggle = { "tokyonight", "gruvbox_light" },
 
   hl_override = highlights.override,
   hl_add = highlights.add,
