@@ -27,6 +27,8 @@ M.ui = {
   hl_override = highlights.override,
   hl_add = highlights.add,
 
+  lsp = { signature = false },
+
   nvdash = {
     load_on_startup = true,
     buttons = {
