@@ -6,6 +6,20 @@ local map = vim.keymap.set
 
 -- map("i", "jk", "<ESC>")
 
+-- Movement across soft-wrapped lines
+local mux_with_g = function(key)
+  local gkey = "g" .. key
+  return function()
+    if vim.v.count == 0 then
+      return gkey
+    else
+      return key
+    end
+  end
+end
+map({ "n", "v" }, "j", mux_with_g "j", { expr = true })
+map({ "n", "v" }, "k", mux_with_g "k", { expr = true })
+
 map("n", ":checkhealth", "<nop>", { desc = "Neovim Run health checks" })
 map("n", ":checkhealth <plugin>", "<nop>", { desc = "Neovim Run health checks for a specific plugin" })
 
