@@ -1,5 +1,7 @@
 require "nvchad.mappings"
 
+local constants = require "constants"
+
 local map = vim.keymap.set
 
 -- map("i", "jk", "<ESC>")
