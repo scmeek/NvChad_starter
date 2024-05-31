@@ -9,6 +9,7 @@ local plugins = {
   require "configs.overrides.nvimtree",
   require "configs.overrides.treesitter",
 
+  require "configs.colorizer",
   require "configs.copilot",
   require "configs.copilotcmp",
   require "configs.crates",
