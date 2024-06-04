@@ -1,7 +1,6 @@
 ---@type NvPluginSpec[]
 local plugins = {
   require "configs.overrides.cmpconfig",
-  require "configs.overrides.commentconfig",
   require "configs.overrides.conformconfig",
   require "configs.overrides.gitsigns",
   require "configs.overrides.lspconfig",
@@ -10,6 +9,7 @@ local plugins = {
   require "configs.overrides.treesitter",
 
   require "configs.colorizer",
+  require "configs.comments",
   require "configs.copilot",
   require "configs.copilotcmp",
   require "configs.crates",
