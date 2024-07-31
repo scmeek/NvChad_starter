@@ -20,7 +20,7 @@ local ui_statusline_cursor_position_add_percent = function(minimum_cursor_positi
     .. minimum_cursor_position_string:sub(position_to_insert + 1)
 end
 
-M.ui = {
+M.base46 = {
   theme = "tokyonight",
   theme_toggle = { "tokyonight", "gruvbox_light" },
 
