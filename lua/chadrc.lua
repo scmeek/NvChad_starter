@@ -26,9 +26,11 @@ M.base46 = {
 
   hl_override = highlights.override,
   hl_add = highlights.add,
+}
 
-  lsp = { signature = false },
+M.lsp = { signature = false }
 
+M.ui = {
   nvdash = {
     load_on_startup = true,
     buttons = {
