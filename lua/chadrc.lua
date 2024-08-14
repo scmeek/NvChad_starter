@@ -21,8 +21,8 @@ local ui_statusline_cursor_position_add_percent = function(minimum_cursor_positi
 end
 
 M.base46 = {
-  theme = "oxocarbon",
-  theme_toggle = { "oxocarbon", "material-lighter" },
+  theme = "nightowl",
+  theme_toggle = { "nightowl", "material-lighter" },
 
   hl_override = highlights.override,
   hl_add = highlights.add,
