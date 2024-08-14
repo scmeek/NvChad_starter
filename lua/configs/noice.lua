@@ -14,6 +14,13 @@ return {
       lsp_doc_border = true, -- add a border to hover docs and signature help
       long_message_to_split = true, -- long messages will be sent to a split
     },
+    routes = {
+      -- Show @recording messages
+      {
+        view = "notify",
+        filter = { event = "msg_showmode" },
+      },
+    },
   },
   dependencies = {
     "MunifTanjim/nui.nvim",
