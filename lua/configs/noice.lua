@@ -15,6 +15,7 @@ return {
       lsp_doc_border = true, -- add a border to hover docs and signature help
       long_message_to_split = true, -- long messages will be sent to a split
     },
+    -- https://github.com/folke/noice.nvim/wiki/Configuration-Recipes
     routes = {
       -- Show @recording messages
       {
@@ -27,6 +28,14 @@ return {
           event = "msg_show",
           kind = "",
           find = "written",
+        },
+        opts = { skip = true },
+      },
+      -- Hide search virtual text
+      {
+        filter = {
+          event = "msg_show",
+          kind = "search_count",
         },
         opts = { skip = true },
       },
