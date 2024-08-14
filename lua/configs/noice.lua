@@ -21,6 +21,15 @@ return {
         view = "notify",
         filter = { event = "msg_showmode" },
       },
+      -- Hide `written` messages
+      {
+        filter = {
+          event = "msg_show",
+          kind = "",
+          find = "written",
+        },
+        opts = { skip = true },
+      },
     },
   },
   dependencies = {
