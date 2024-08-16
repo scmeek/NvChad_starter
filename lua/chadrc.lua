@@ -23,6 +23,7 @@ end
 M.base46 = {
   theme = "nightowl",
   theme_toggle = { "nightowl", "material-lighter" },
+  transparency = true,
 
   hl_override = highlights.override,
   hl_add = highlights.add,
