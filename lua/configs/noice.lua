@@ -56,6 +56,10 @@ return {
   },
   dependencies = {
     "MunifTanjim/nui.nvim",
-    "rcarriga/nvim-notify", -- optional for notification view
+    -- optional for notification view
+    {
+      "rcarriga/nvim-notify",
+      opts = { background_colour = "#000000" }, -- Suppress warning for transparency
+    },
   },
 }
