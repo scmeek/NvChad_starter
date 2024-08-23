@@ -21,8 +21,8 @@ local ui_statusline_cursor_position_add_percent = function(minimum_cursor_positi
 end
 
 M.base46 = {
-  theme = "jabuti",
-  theme_toggle = { "jabuti", "material-lighter" },
+  theme = "tokyonight",
+  theme_toggle = { "tokyonight", "material-lighter" },
   transparency = true,
 
   hl_override = highlights.override,
