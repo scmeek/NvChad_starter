@@ -22,6 +22,7 @@ local options = {
   hlsearch = false,
   inccommand = "split", -- Live substitution
   incsearch = true,
+  laststatus = 3,
   linebreak = true,
   list = true,
   listchars = { tab = "┊ ", trail = "·", extends = ">" },
@@ -32,6 +33,7 @@ local options = {
   showbreak = "↪",
   showmatch = true,
   spell = true,
+  splitkeep = "screen",
   swapfile = false,
   timeout = true,
   undodir = os.getenv "XDG_DATA_HOME" .. "/nvim/undo-history",
