@@ -22,8 +22,8 @@ end
 
 M.base46 = {
   theme = "tokyonight",
-  theme_toggle = { "tokyonight", "material-lighter" },
-  transparency = true,
+  theme_toggle = { "tokyonight", "flexoki-light" },
+  transparency = false,
 
   hl_override = highlights.override,
   hl_add = highlights.add,
