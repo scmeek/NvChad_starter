@@ -21,7 +21,7 @@ local custom_config_servers = {
   arduino_language_server = require "configs.overrides.lspconfig.arduino_language_server",
   eslint = require "configs.overrides.lspconfig.eslint",
   rust_analyzer = require "configs.overrides.lspconfig.rust_analyzer",
-  tsserver = require "configs.overrides.lspconfig.tsserver",
+  ts_ls = require "configs.overrides.lspconfig.ts_ls",
 }
 
 return {
