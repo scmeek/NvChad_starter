@@ -12,6 +12,7 @@ return {
 
     opts.mapping["<CR>"] = cmp.mapping.confirm { select = false }
 
-    return opts
+    local opts_with_nvchad = vim.tbl_deep_extend("force", opts, require "nvchad.cmp")
+    return opts_with_nvchad
   end,
 }

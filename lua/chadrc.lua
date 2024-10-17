@@ -22,8 +22,8 @@ local ui_statusline_cursor_position_add_percent = function(minimum_cursor_positi
 end
 
 M.base46 = {
-  theme = "tokyonight",
-  theme_toggle = { "tokyonight", "flexoki-light" },
+  theme = "tokyodark",
+  theme_toggle = { "tokyodark", "flexoki-light" },
   transparency = false,
 
   hl_override = highlights.override,
@@ -65,6 +65,12 @@ M.nvdash = {
 }
 
 M.ui = {
+  cmp = {
+    format_colors = {
+      tailwind = true,
+    },
+  },
+
   statusline = {
     theme = "minimal", -- including custom percent below relies on "minimal"
     separator_style = "block",
