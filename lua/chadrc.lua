@@ -60,19 +60,11 @@ M.mason = {
   },
 }
 
-M.ui = {
-  nvdash = {
-    load_on_startup = true,
-    buttons = {
-      { "  Find File", "<leader> + ff", "Telescope find_files" },
-      { "󰈚  Recent Files", "<leader> + fo", "Telescope oldfiles" },
-      { "󰈭  Find Word", "<leader> + fw", "Telescope live_grep" },
-      { "  Bookmarks", "<leader> + ma", "Telescope marks" },
-      { "  Themes", "<leader> + th", "Telescope themes" },
-      { "  Mappings", "<leader> + ch", "Open cheatsheet" },
-    },
-  },
+M.nvdash = {
+  load_on_startup = true,
+}
 
+M.ui = {
   statusline = {
     theme = "minimal", -- including custom percent below relies on "minimal"
     separator_style = "block",
