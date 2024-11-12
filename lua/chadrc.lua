@@ -22,8 +22,8 @@ local ui_statusline_cursor_position_add_percent = function(minimum_cursor_positi
 end
 
 M.base46 = {
-  theme = "tokyodark",
-  theme_toggle = { "tokyodark", "flexoki-light" },
+  theme = "aquarium",
+  theme_toggle = { "aquarium", "flexoki-light" },
   transparency = false,
 
   hl_override = highlights.override,
