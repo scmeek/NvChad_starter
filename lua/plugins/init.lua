@@ -18,6 +18,7 @@ local plugins = {
   require "configs.fugitive",
   require "configs.glslview",
   require "configs.lastplace",
+  require "configs.lazygit",
   require "configs.multicursors",
   require "configs.noice",
   require "configs.nullls",
