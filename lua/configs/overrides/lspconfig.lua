@@ -1,5 +1,4 @@
-local on_attach = require("nvchad.configs.lspconfig").on_attach
-local capabilities = require("nvchad.configs.lspconfig").capabilities
+local lspconfigs = require "nvchad.configs.lspconfig"
 
 local lspconfig = require "lspconfig"
 
@@ -31,8 +30,9 @@ return {
 
     for _, lsp in ipairs(default_config_servers) do
       lspconfig[lsp].setup {
-        on_attach = on_attach,
-        capabilities = capabilities,
+        on_init = lspconfigs.on_init,
+        on_attach = lspconfigs.on_attach,
+        capabilities = lspconfigs.capabilities,
       }
     end
 
