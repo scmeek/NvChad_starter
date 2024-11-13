@@ -5,6 +5,7 @@ local plugins = {
   require "configs.overrides.gitsigns",
   require "configs.overrides.lspconfig",
   require "configs.overrides.nvimtree",
+  require "configs.overrides.telescope",
   require "configs.overrides.treesitter",
 
   require "configs.avante",
