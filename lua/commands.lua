@@ -1,12 +1,15 @@
 require "nvchad.autocmds"
 
-vim.api.nvim_create_user_command("WQ", "wq", {})
-vim.api.nvim_create_user_command("Wq", "wq", {})
-vim.api.nvim_create_user_command("W", "w", {})
-vim.api.nvim_create_user_command("Qa", "qa", {})
-vim.api.nvim_create_user_command("Q", "q", {})
+local autocmd = vim.api.nvim_create_autocmd
+local user_command = vim.api.nvim_create_user_command
 
-vim.api.nvim_create_autocmd("TextYankPost", {
+user_command("WQ", "wq", {})
+user_command("Wq", "wq", {})
+user_command("W", "w", {})
+user_command("Qa", "qa", {})
+user_command("Q", "q", {})
+
+autocmd("TextYankPost", {
   group = vim.api.nvim_create_augroup("Highlight on yank", { clear = true }),
   pattern = "*",
   callback = function()
@@ -14,7 +17,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
-vim.api.nvim_create_user_command("ToggleVerboseLogging", function()
+user_command("ToggleVerboseLogging", function()
   if vim.opt.verbose:get() == 0 then
     print "Enabling verbose logging"
     vim.opt.verbosefile = vim.fn.expand "~/log/vim/verbose.log"
@@ -26,7 +29,7 @@ vim.api.nvim_create_user_command("ToggleVerboseLogging", function()
   end
 end, {})
 
-vim.api.nvim_create_autocmd("FileType", {
+autocmd("FileType", {
   group = vim.api.nvim_create_augroup("Disable spell", { clear = true }),
   pattern = {
     "gitignore",
@@ -42,5 +45,21 @@ vim.api.nvim_create_autocmd("FileType", {
   },
   callback = function()
     vim.opt.spell = false
+  end,
+})
+
+-- Restore cursor position on file open
+autocmd("BufReadPost", {
+  pattern = "*",
+  callback = function()
+    local line = vim.fn.line "'\""
+    if
+      line > 1
+      and line <= vim.fn.line "$"
+      and vim.bo.filetype ~= "commit"
+      and vim.fn.index({ "xxd", "gitrebase" }, vim.bo.filetype) == -1
+    then
+      vim.cmd 'normal! g`"'
+    end
   end,
 })
