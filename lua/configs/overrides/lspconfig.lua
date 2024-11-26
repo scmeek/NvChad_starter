@@ -6,7 +6,7 @@ local default_config_servers = {
   "bashls",
   "clangd",
   "cssls",
-  "glsl_analyzer",
+  --"glsl_analyzer",
   "html",
   "pyright",
   "rust_analyzer",
