@@ -39,6 +39,7 @@ M.mason = {
     "bash-language-server",
     "clang-format",
     "clangd",
+    "codelldb",
     "css-lsp",
     "eslint-lsp",
     --"glsl_analyzer",
@@ -47,7 +48,6 @@ M.mason = {
     "prettier",
     "pyright",
     "rust-analyzer",
-    --"rustfmt",  -- Deprecated, use rustup to install
     "shellcheck",
     "shfmt",
     "stylua",
