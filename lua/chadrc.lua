@@ -47,7 +47,7 @@ M.mason = {
     "lua-language-server",
     "prettier",
     "pyright",
-    "rust-analyzer",
+    --"rust-analyzer", -- Interferes with rustaceanvim
     "shellcheck",
     "shfmt",
     "stylua",
