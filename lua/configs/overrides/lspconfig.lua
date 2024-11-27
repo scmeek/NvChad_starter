@@ -8,7 +8,6 @@ local default_config_servers = {
   --"glsl_analyzer",
   "html",
   "pyright",
-  -- "rust_analyzer", -- Interferes with rustaceanvim
   "taplo",
   "tailwindcss",
   "vimls",
@@ -18,10 +17,6 @@ local default_config_servers = {
 local custom_config_servers = {
   arduino_language_server = require "configs.overrides.lspconfig.arduino_language_server",
   eslint = require "configs.overrides.lspconfig.eslint",
-
-  -- Interferes with rustaceanvim
-  -- rust_analyzer = require "configs.overrides.lspconfig.rust_analyzer",
-
   ts_ls = require "configs.overrides.lspconfig.ts_ls",
 }
 
