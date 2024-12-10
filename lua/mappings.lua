@@ -90,6 +90,3 @@ map("n", "<leader>lf", function()
     },
   }
 end, { desc = "LSP Floating diagnostic" })
-
-map("n", "<leader>h", "<nop>", { desc = "terminal Open horizontal terminal window" })
-map("n", "<leader>v", "<nop>", { desc = "terminal Open horizontal terminal window" })
