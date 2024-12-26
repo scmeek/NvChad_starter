@@ -5,4 +5,5 @@ return {
     opts.defaults.layout_strategy = "vertical"
     return opts
   end,
+  priority = 500,
 }

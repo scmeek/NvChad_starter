@@ -19,6 +19,7 @@ local plugins = {
   require "configs.dressing",
   require "configs.fugitive",
   require "configs.glslview",
+  require "configs.harpoon",
   require "configs.lastplace",
   require "configs.lazygit",
   require "configs.markdown_preview",
