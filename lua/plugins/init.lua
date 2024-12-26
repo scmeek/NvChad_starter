@@ -26,6 +26,7 @@ local plugins = {
   require "configs.multicursors",
   require "configs.noice",
   require "configs.nullls",
+  require "configs.oil",
   require "configs.rustaceanvim",
   require "configs.signature",
   require "configs.spider",
