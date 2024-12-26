@@ -30,6 +30,7 @@ local plugins = {
   require "configs.rustaceanvim",
   require "configs.signature",
   require "configs.spider",
+  require "configs.snacks",
   require "configs.surround",
   require "configs.targets",
   require "configs.tmuxnavigator",
