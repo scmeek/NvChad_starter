@@ -37,19 +37,19 @@ return {
       toggle_telescope(harpoon:list())
     end, { desc = "harpoon Open window" })
 
-    vim.keymap.set("n", "<C-h>", function()
+    vim.keymap.set("n", "<C-u>", function()
       harpoon:list():select(1)
     end, { desc = "harpoon Go to first" })
 
-    vim.keymap.set("n", "<C-j>", function()
+    vim.keymap.set("n", "<C-i>", function()
       harpoon:list():select(2)
     end, { desc = "harpoon Go to second" })
 
-    vim.keymap.set("n", "<C-k>", function()
+    vim.keymap.set("n", "<C-o>", function()
       harpoon:list():select(3)
     end, { desc = "harpoon Go to third" })
 
-    vim.keymap.set("n", "<C-l>", function()
+    vim.keymap.set("n", "<C-p>", function()
       harpoon:list():select(4)
     end, { desc = "harpoon Go to fourth" })
 
