@@ -8,7 +8,6 @@ local plugins = {
   require "configs.overrides.telescope",
   require "configs.overrides.treesitter",
 
-  require "configs.avante",
   require "configs.colorizer",
   require "configs.comments",
   require "configs.copilot",
