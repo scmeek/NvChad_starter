@@ -10,8 +10,6 @@ local plugins = {
   require "configs.blink",
   require "configs.colorizer",
   require "configs.comments",
-  require "configs.copilot",
-  require "configs.copilotcmp",
   require "configs.crates",
   require "configs.dap",
   require "configs.dap_ui",
