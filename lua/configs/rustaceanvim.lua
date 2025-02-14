@@ -35,7 +35,11 @@ return {
               allFeatures = true,
             },
             checkOnSave = {
+              enable = false,
               command = "clippy",
+            },
+            diagnostics = {
+              enable = false,
             },
           }
         end

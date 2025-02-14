@@ -16,6 +16,7 @@ local default_config_servers = {
 
 local custom_config_servers = {
   arduino_language_server = require "configs.overrides.lspconfig.arduino_language_server",
+  bacon_ls = require "configs.overrides.lspconfig.bacon_ls",
   eslint = require "configs.overrides.lspconfig.eslint",
   ts_ls = require "configs.overrides.lspconfig.ts_ls",
 }

@@ -36,6 +36,8 @@ M.mason = {
   cmd = true,
   pkgs = {
     "arduino-language-server",
+    "bacon",
+    "bacon-ls",
     "bash-language-server",
     "clang-format",
     "clangd",
