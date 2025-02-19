@@ -68,7 +68,7 @@ map("n", "zm", "zm", { desc = "folds Fold more (close) all folds by one level", 
 map("n", "zi", "zi", { desc = "folds Change fold method", noremap = false })
 
 map("n", "c", "c", { desc = "nvimtree Copy file", noremap = true, silent = true })
-map("n", "p", "p", { desc = "nvimtree Pase", noremap = true, silent = true })
+map("n", "p", "p", { desc = "nvimtree Paste", noremap = true, silent = true })
 
 map("n", "cs + {old char} + {new char}", "<nop>", { desc = "surround Change surround character" })
 map("n", "ds + {char}", "<nop>", { desc = "surround Delete surround character" })
