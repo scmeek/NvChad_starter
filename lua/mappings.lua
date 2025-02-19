@@ -69,6 +69,7 @@ map("n", "zi", "zi", { desc = "folds Change fold method", noremap = false })
 
 map("n", "c", "c", { desc = "nvimtree Copy file", noremap = true, silent = true })
 map("n", "p", "p", { desc = "nvimtree Paste", noremap = true, silent = true })
+map("n", "I", "<nop>", { desc = "nvimtree Toggle ignored diles and directories" })
 
 map("n", "cs + {old char} + {new char}", "<nop>", { desc = "surround Change surround character" })
 map("n", "ds + {char}", "<nop>", { desc = "surround Delete surround character" })
