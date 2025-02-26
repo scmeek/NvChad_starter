@@ -29,21 +29,20 @@ return {
         local config = vim.json.decode(config_json) or nil
         if config ~= nil then
           return config
-        else
-          return {
-            cargo = {
-              allFeatures = true,
-            },
-            checkOnSave = {
-              enable = false,
-              command = "clippy",
-            },
-            diagnostics = {
-              enable = false,
-            },
-          }
         end
       end
+      return {
+        cargo = {
+          allFeatures = true,
+        },
+        checkOnSave = {
+          enable = false,
+          command = "clippy",
+        },
+        diagnostics = {
+          enable = false,
+        },
+      }
     end
     local rust_analyzer_settings = fetch_rust_analyzer_settings()
 
