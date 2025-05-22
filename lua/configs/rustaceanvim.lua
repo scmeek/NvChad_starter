@@ -8,17 +8,17 @@ local rust_analyzer_config_file_handler = io.open(rust_analyzer_config_file, "r"
 
 return {
   "mrcjkb/rustaceanvim",
-  version = "^5", -- Recommended
+  version = "^6", -- Recommended
   lazy = false, -- This plugin is already lazy
   ft = "rust",
   config = function()
-    local mason_registry = require "mason-registry"
-    local codelldb = mason_registry.get_package "codelldb"
-    local extension_path = codelldb:get_install_path() .. "/extension/"
+    local extension_path = vim.fn.expand "$MASON/packages/codelldb/extension/"
     local codelldb_path = extension_path .. "adapter/codelldb"
+
     local liblldb_path = extension_path .. "lldb/lib/liblldb.dylib"
     -- If you are on Linux, replace the line above with the line below:
     -- local liblldb_path = extension_path .. "lldb/lib/liblldb.so"
+
     local cfg = require "rustaceanvim.config"
 
     local fetch_rust_analyzer_settings = function()
