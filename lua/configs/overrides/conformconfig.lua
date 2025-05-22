@@ -18,7 +18,7 @@ return {
       --ino = { "clang-format" },
       lua = { "stylua" },
       python = { "black", "isort" },
-      rust = { "rustfmt" },
+      rust = { "cargo fmt", lsp_format = "fallback" },
       sh = { "shfmt" },
       toml = { "taplo" },
       yaml = { "yamlfmt" },
